@@ -1,0 +1,168 @@
+#intro {
+    min-height: calc(100vh - 4rem);
+    width: 100%;
+    max-width: 75rem;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;   /* ✅ */
+    padding: 2rem;
+}
+
+
+
+.bg {
+    position: relative;            
+    right: 0;
+    top: 0;
+    transform: none;
+    z-index: 1;
+    object-fit: contain;
+    height: 80vh;
+    max-width: 45%;
+    flex: 1;
+    margin-left: 0.5rem;
+}
+
+
+.introContent {
+    flex: 1;                       /* ✅ */
+    padding: 2rem;
+    font-size: 3rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 50%;                /* ✅ controls gap */
+    z-index: 2;
+}
+
+
+.hello {
+    font-size: 1.75rem;
+    font-weight: 100;
+}
+
+.introName{
+    color: #007bff;
+}
+
+.introPara {
+    font-size: medium;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.btn {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 1rem 0;
+    cursor: pointer;
+}
+
+/* Use natural ratio */
+.btnImg {
+    height: 40px;                /* ✅ close to real size */
+    width: auto;
+    object-fit: contain;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: transform 0.15s ease, opacity 0.15s ease, box-shadow 0.15s ease;
+}
+
+.btnImg:hover {
+    transform: scale(1.08);
+    opacity: 0.9;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.btnImg:active {
+    transform: scale(0.96);
+}
+
+
+/* iPad Pro */
+@media screen and (min-width:1025px) and (max-width:1366px) {
+    .introContent {
+        font-size: 2.6rem;
+        max-width: 55%;
+    }
+
+    .bg {
+        height: 70vh;
+        max-width: 45%;
+    }
+}
+
+/* Tablet Landscape */
+@media screen and (min-width:769px) and (max-width:1024px) and (orientation: landscape) {
+    .introContent {
+        font-size: 2.4rem;
+        max-width: 55%;
+    }
+
+    .bg {
+        height: 60vh;
+        max-width: 45%;
+    }
+}
+
+/* Tablet Portrait */
+@media screen and (min-width:769px) and (max-width:1024px) and (orientation: portrait) {
+    #intro {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .introContent {
+        max-width: 100%;
+        align-items: center;
+        font-size: 2.4rem;
+    }
+
+    .bg {
+        height: 55vh;
+        max-width: 65%;
+        margin-top: 1rem;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width:768px) {
+    #intro {
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 2rem;
+    }
+
+    .introContent {
+        max-width: 100%;
+        align-items: center;
+        font-size: 2.2rem;
+    }
+
+    .bg {
+        height: auto;
+        max-width: 80%;
+        margin-top: 1rem;
+    }
+}
+
+/* Small Phones */
+@media screen and (max-width:360px) {
+    .introContent {
+        font-size: 2rem;
+    }
+
+    .bg {
+        max-width: 90%;
+    }
+
+    .btnImg {
+        height: 34px;
+    }
+}
