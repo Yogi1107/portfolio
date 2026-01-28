@@ -17,7 +17,6 @@ export default function Contact() {
       .then(
         () => {
           console.log('SUCCESS!');
-          alert("Email Sent!");
         },
         (error) => {
           console.log('FAILED...', error.text);
