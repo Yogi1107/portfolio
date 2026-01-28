@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useRef} from 'react';
 import linkedin from '../../assets/l.png';
 import github from '../../assets/g.png';
 import leetcode from '../../assets/leetcode.png';
