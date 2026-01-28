@@ -10,7 +10,7 @@ export default function Intro() {
             <div className='introContent'>
                 <span className='hello'>Hello,</span>
                 <span className='introText'>I'm <span className='introName'>Yogiraj</span><br /> Software Developer</span>
-                <p className='introPara'>I am a skilled Full - Stack Python Developer <br /> with a keen interest for AI, ML</p>
+                <p className='introPara'>A student exploring AI and data science by building useful, real-world projects in Python.</p>
                 <Link to="contact" smooth={true} duration={500}>
                     <button className="btn">
                     <img src={btnimg} alt="Hire Me" className="btnImg" />
