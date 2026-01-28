@@ -9,7 +9,7 @@ export default function CodingStats() {
     <section id="codingStats">
       <h2 className="statsTitle">Coding Activity</h2>
       <p className="statsDesc">
-        My consistency and progress across GitHub and LeetCode.
+        Practicing coding to improve logic and problem-solving.
       </p>
 
       <div className="statsGrid">

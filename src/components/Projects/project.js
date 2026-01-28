@@ -42,7 +42,7 @@ export default function Project() {
     return (
         <section id='project'>
             <h2 className='projectTitle'>Projects</h2>
-            <span className='projectDesc'>I take pride in paying attention to small details</span>
+            <span className='projectDesc'>Here are some projects I’ve built using Python, databases, and web technologies to solve real-world problems.</span>
             <div className='projectImgs'>
                 {projects.map((proj, index) => (
                     <div 

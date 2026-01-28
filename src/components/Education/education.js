@@ -6,12 +6,12 @@ export default function Education() {
     <section id="education">
       <h2 className="eduTitle">Education</h2>
       <p className="eduDesc">
-        My academic journey and specialization in Computer Science and AI.
+        My academic journey and specialization in Computer Science.
       </p>
 
       <div className="eduTimeline">
         <div className="eduCard">
-          <span className="eduYear">2024 - Present</span>
+          <span className="eduYear">2025 - Present</span>
           <h3>M.Sc. Computer Science</h3>
           <p>Fergusson College, Pune</p>
           <p className="eduInfo">
@@ -20,7 +20,7 @@ export default function Education() {
         </div>
 
         <div className="eduCard">
-          <span className="eduYear">2021 - 2024</span>
+          <span className="eduYear">2025 - 2025</span>
           <h3>B.Sc. Computer Science</h3>
           <p>MES’ Abasaheb Garware College</p>
           <p className="eduInfo">
