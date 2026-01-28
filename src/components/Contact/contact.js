@@ -12,11 +12,12 @@ export default function Contact() {
 
     emailjs
       .sendForm('service_5cfieju', 'template_6rd8xll', form.current, {
-        publicKey: '7T12GZHlNEGm2f2swDkhe',
+        publicKey: 'yw01D4H0lT4kD0E3x',
       })
       .then(
         () => {
           console.log('SUCCESS!');
+          aler
         },
         (error) => {
           console.log('FAILED...', error.text);
