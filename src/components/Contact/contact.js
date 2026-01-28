@@ -1,6 +1,7 @@
 import React from 'react';
 import linkedin from '../../assets/l.png';
 import github from '../../assets/g.png';
+import leetcode from '../../assets/leetcode.png';
 import './contact.css'
 
 export default function Contact() {
@@ -16,6 +17,7 @@ export default function Contact() {
                 <div className='links'>
                     <a href='https://github.com/Yogi1107'><img className='link' src={github} alt='GitHub'/></a>
                     <a href='https://www.linkedin.com/in/yogiraj-bhilare-bb3896253'><img className='link' src={linkedin} alt='LinkedIN'/></a>
+                    <a href='https://leetcode.com/u/yogirajbhilare1107/'><img className='link' src={leetcode} alt='Leetcode'/></a>
                 </div>
             </form>
         </div>
