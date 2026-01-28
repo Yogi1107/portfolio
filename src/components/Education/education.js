@@ -22,7 +22,7 @@ export default function Education() {
         <div className="eduCard">
           <span className="eduYear">2025 - 2025</span>
           <h3>B.Sc. Computer Science</h3>
-          <p>MES’ Abasaheb Garware College</p>
+          <p>Sir Parashurambhau College (Autonomous), Pune</p>
           <p className="eduInfo">
             Graduated with <strong>CGPA: 9.5</strong>. Core subjects included DSA, DBMS, OS, and Statistics.
           </p>
