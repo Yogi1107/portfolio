@@ -20,7 +20,7 @@ export default function Education() {
         </div>
 
         <div className="eduCard">
-          <span className="eduYear">2025 - 2025</span>
+          <span className="eduYear">2022 - 2025</span>
           <h3>B.Sc. Computer Science</h3>
           <p>Sir Parashurambhau College (Autonomous), Pune</p>
           <p className="eduInfo">
