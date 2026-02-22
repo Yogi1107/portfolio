@@ -3,6 +3,7 @@ import './project.css';
 import img from '../../assets/PSC.png';
 import img_ from '../../assets/RS.png';
 import img__ from '../../assets/DAA.png';
+import img___ from '../../assets/CCP.png';
 
 const projects = [
     {
@@ -10,7 +11,8 @@ const projects = [
         img: img,
         description: 'AI-powered personalized study assistant: upload notes, get summaries, practice questions, contextual Q&A, and automated study schedules with progress tracking.',
         techStack: 'Python(Flask), Bootstrap, Local LLM (ollama), PostgreSQL',
-        github: 'https://github.com/Yogi1107/Personalized-Study-Coach'
+        github: 'https://github.com/Yogi1107/Personalized-Study-Coach',
+        deployed_link: 'https://personalized-study-coach.onrender.com/'
     },
     {
         name: 'AI Resume Screener',
@@ -25,6 +27,14 @@ const projects = [
         description: 'The Disability Assistant Application is a comprehensive tool designed to assist individuals with disabilities. It integrates various features such as voice assistance, AI learning support, sign detection for speech impairment, and customizable user profiles.',
         techStack: 'Python (Flask), HTML, CSS, JS, Mediapipe',
         github: 'https://github.com/Yogi1107/Disability-Assistant-Application'
+    },
+    {
+        name: 'Customer Churn Prediction',
+        img: img___,
+        description: 'Built a balanced Logistic Regression pipeline with feature scaling to predict churn-prone users, achieving Recall: 0.79 and ROC-AUC: 0.84, enabling targeted retention strategies wit the integrated Streamlit dashboard for real-time visualization and decision-making insights.',
+        techStack: 'Python (Flask), HTML, CSS, JS, Mediapipe',
+        github: 'https://github.com/Yogi1107/Disability-Assistant-Application',
+        deployed_link: 'https://customer-churn-analysis-sgel5lcxrzygrvsjf637co.streamlit.app/'
     },
 ];
 
@@ -67,6 +77,12 @@ export default function Project() {
                             <strong>GitHub:</strong> 
                             <a href={selectedProject.github} target='_blank' rel='noopener noreferrer'>
                                 {selectedProject.github}
+                            </a>
+                        </p>
+                        <p>
+                            <strong>Deployed Link:</strong> 
+                            <a href={selectedProject.deployed_link} target='_blank' rel='noopener noreferrer'>
+                                {selectedProject.deployed_link}
                             </a>
                         </p>
                     </div>
