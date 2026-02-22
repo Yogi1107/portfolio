@@ -2,13 +2,13 @@
     margin: 0 auto;
     text-align: center;
     padding: 0 1rem;
-    min-height: calc(100vh-4rem);
+    /* min-height: calc(100vh-4rem); */
     width: 100vw;
     max-width: 60rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
 }
 
 .projectTitle{
