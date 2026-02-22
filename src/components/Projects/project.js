@@ -7,35 +7,39 @@ import img___ from '../../assets/CCP.png';
 
 const projects = [
     {
-        name: 'Personalised Study Coach',
+        name: 'Personalized Study Coach',
         img: img,
-        description: 'AI-powered personalized study assistant: upload notes, get summaries, practice questions, contextual Q&A, and automated study schedules with progress tracking.',
-        techStack: 'Python(Flask), Bootstrap, Local LLM (ollama), PostgreSQL',
+        description:
+            'AI-powered personalized study assistant: upload notes, get summaries, practice questions, contextual Q&A, and automated study schedules with progress tracking.',
+        techStack: ['Python', 'Flask', 'Bootstrap', 'Ollama (LLM)', 'PostgreSQL'],
         github: 'https://github.com/Yogi1107/Personalized-Study-Coach',
         deployed_link: 'https://personalized-study-coach.onrender.com/'
     },
     {
         name: 'AI Resume Screener',
         img: img_,
-        description: 'An end-to-end AI-powered Resume Screening System that evaluates a candidate resume against a given job description using a Large Language Model (LLM).',
-        techStack: 'Local LLM (ollama), Streamlit',
+        description:
+            'End-to-end AI-powered Resume Screening System that evaluates candidate resumes against job descriptions using a Large Language Model.',
+        techStack: ['Ollama (LLM)', 'Streamlit'],
         github: 'https://github.com/Yogi1107/AI_Resume_Screener'
     },
     {
         name: 'Disability Assistant Application',
         img: img__,
-        description: 'The Disability Assistant Application is a comprehensive tool designed to assist individuals with disabilities. It integrates various features such as voice assistance, AI learning support, sign detection for speech impairment, and customizable user profiles.',
-        techStack: 'Python (Flask), HTML, CSS, JS, Mediapipe',
+        description:
+            'Comprehensive accessibility tool integrating voice assistance, AI learning support, sign detection using MediaPipe, and customizable user profiles.',
+        techStack: ['Python', 'Flask', 'HTML', 'CSS', 'JavaScript', 'MediaPipe'],
         github: 'https://github.com/Yogi1107/Disability-Assistant-Application'
     },
     {
         name: 'Customer Churn Prediction',
         img: img___,
-        description: 'Built a balanced Logistic Regression pipeline with feature scaling to predict churn-prone users, achieving Recall: 0.79 and ROC-AUC: 0.84, enabling targeted retention strategies wit the integrated Streamlit dashboard for real-time visualization and decision-making insights.',
-        techStack: 'Python (Flask), HTML, CSS, JS, Mediapipe',
-        github: 'https://github.com/Yogi1107/Disability-Assistant-Application',
+        description:
+            'Balanced Logistic Regression pipeline with feature scaling. Achieved Recall: 0.79 and ROC-AUC: 0.84. Integrated Streamlit dashboard for real-time churn insights.',
+        techStack: ['Python', 'Scikit-Learn', 'Streamlit', 'Pandas', 'Matplotlib'],
+        github: 'https://github.com/Yogi1107/Customer-Churn-Prediction',
         deployed_link: 'https://customer-churn-analysis-sgel5lcxrzygrvsjf637co.streamlit.app/'
-    },
+    }
 ];
 
 export default function Project() {
