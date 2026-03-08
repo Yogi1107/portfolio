@@ -3,7 +3,8 @@ import linkedin from '../../assets/l.png';
 import github from '../../assets/g.png';
 import leetcode from '../../assets/leetcode.png';
 import emailjs from '@emailjs/browser';
-import './contact.css'
+import './contact.css';
+import SplitText from '../../components/animations/SplitText';
 
 export default function Contact() {
     const form = useRef();
@@ -25,7 +26,17 @@ export default function Contact() {
     };
     return (
         <div id='contact'>
-            <h1 className='contactPageTitle'>Contact Me</h1>
+            <div className='contactPageTitle'>
+              <SplitText
+            text="Contact"
+            delay={50}
+            duration={1}
+            ease="power3.out"
+            splitType="chars"
+            from={{ opacity: 0, y: 40 }}
+            to={{ opacity: 1, y: 0 }}
+          />
+            </div>
             <span className='contactDesc'>Feel free to reach out if you’d like to connect, collaborate, or discuss opportunities.</span>
             <form className='contactForm' ref={form} onSubmit={sendEmail}>
                 <input type='text' className='name' placeholder='Your Name' name='name'/>

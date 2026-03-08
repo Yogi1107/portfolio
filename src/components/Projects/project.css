@@ -11,9 +11,14 @@
     /* justify-content: center; */
 }
 
-.projectTitle{
-    margin: 1rem 0;
-    font-size: 3rem;
+.projectTitle {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .projectDesc{

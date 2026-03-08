@@ -4,11 +4,22 @@ import postgres from '../../assets/postgresql.png';
 import react from '../../assets/react.png';
 import javascript from '../../assets/javascript.png'
 import './skills.css';
+import SplitText from '../../components/animations/SplitText';
 
 export default function Skills() {
     return (
         <section id='skills'>
-            <span className='skillTitle'>Skills</span>
+            <div className='skillTitle'>
+                <SplitText
+            text="Skills"
+            delay={50}
+            duration={1}
+            ease="power3.out"
+            splitType="chars"
+            from={{ opacity: 0, y: 40 }}
+            to={{ opacity: 1, y: 0 }}
+          />
+            </div>
             <span className='skillDesc'>I build projects using Python for backend logic, PostgreSQL for databases, and React with JavaScript for the frontend.
             My focus is on creating simple, useful applications that work well in real-world scenarios.
             I keep improving my skills by learning and building consistently. </span>

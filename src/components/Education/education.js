@@ -1,10 +1,21 @@
 import React from "react";
 import "./education.css";
+import SplitText from '../../components/animations/SplitText';
 
 export default function Education() {
   return (
     <section id="education">
-      <h2 className="eduTitle">Education</h2>
+      <div className="eduTitle">
+        <SplitText
+            text="Education"
+            delay={50}
+            duration={1}
+            ease="power3.out"
+            splitType="chars"
+            from={{ opacity: 0, y: 40 }}
+            to={{ opacity: 1, y: 0 }}
+          />
+      </div>
       <p className="eduDesc">
         My academic journey and specialization in Computer Science.
       </p>

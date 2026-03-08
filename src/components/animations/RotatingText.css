@@ -1,0 +1,89 @@
+/* Container for rotating role text */
+.rotatingRole {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  min-height: 2.5rem;
+  color: white;
+}
+
+/* Main rotating text */
+.rotatingText {
+  color: #ffffff;
+  display: inline-block;
+  letter-spacing: 1px;
+}
+
+/* Wrapper */
+.text-rotate {
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+/* Word container */
+.text-rotate-word {
+  display: inline-flex;
+}
+
+/* Animated characters */
+.text-rotate-element {
+  display: inline-block;
+  will-change: transform, opacity;
+}
+
+/* Screen reader text */
+.text-rotate-sr-only {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Space between words */
+.text-rotate-space {
+  width: 0.3em;
+}
+
+
+/* ========================= */
+/* Responsive Media Queries */
+/* ========================= */
+
+/* Tablets */
+@media screen and (max-width: 1024px) {
+  .rotatingRole {
+    font-size: 1.7rem;
+    min-height: 2.2rem;
+  }
+}
+
+/* Large phones */
+@media screen and (max-width: 768px) {
+  .rotatingRole {
+    font-size: 1.5rem;
+    min-height: 2rem;
+  }
+}
+
+/* Mobile phones */
+@media screen and (max-width: 480px) {
+  .rotatingRole {
+    font-size: 1.2rem;
+    min-height: 1.8rem;
+  }
+
+  .rotatingText {
+    letter-spacing: 0.5px;
+  }
+}
+
+/* Small devices */
+@media screen and (max-width: 360px) {
+  .rotatingRole {
+    font-size: 1rem;
+    min-height: 1.6rem;
+  }
+}

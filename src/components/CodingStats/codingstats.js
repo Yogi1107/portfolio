@@ -1,5 +1,6 @@
 import React from "react";
 import "./codingstats.css";
+import SplitText from "./../animations/SplitText.js";
 
 export default function CodingStats() {
   const githubUsername = "Yogi1107";
@@ -7,7 +8,17 @@ export default function CodingStats() {
 
   return (
     <section id="codingStats">
-      <h2 className="statsTitle">Coding Activity</h2>
+      <div className="statsTitle">
+          <SplitText
+            text="Coding Stats"
+            delay={50}
+            duration={1}
+            ease="power3.out"
+            splitType="chars"
+            from={{ opacity: 0, y: 40 }}
+            to={{ opacity: 1, y: 0 }}
+          />
+      </div>
       <p className="statsDesc">
         Practicing coding to improve logic and problem-solving.
       </p>

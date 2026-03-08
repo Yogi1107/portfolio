@@ -4,6 +4,7 @@ import img from '../../assets/PSC.png';
 import img_ from '../../assets/RS.png';
 import img__ from '../../assets/DAA.png';
 import img___ from '../../assets/CCP.png';
+import SplitText from '../../components/animations/SplitText';
 
 const projects = [
     {
@@ -55,7 +56,17 @@ export default function Project() {
 
     return (
         <section id='project'>
-            <h2 className='projectTitle'>Projects</h2>
+            <div className='projectTitle'>
+                <SplitText
+            text="Projects"
+            delay={50}
+            duration={1}
+            ease="power3.out"
+            splitType="chars"
+            from={{ opacity: 0, y: 40 }}
+            to={{ opacity: 1, y: 0 }}
+          />
+            </div>
             <span className='projectDesc'>Here are some projects I’ve built using Python, databases, and web technologies to solve real-world problems.</span>
             <div className='projectImgs'>
                 {projects.map((proj, index) => (
