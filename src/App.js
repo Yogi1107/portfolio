@@ -7,6 +7,7 @@ import CodingStats from './components/CodingStats/codingstats';
 import Contact from './components/Contact/contact';
 import Footer from './components/Footer/footer';
 
+
 function App() {
   return (
     <div className="App">
