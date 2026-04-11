@@ -23,19 +23,31 @@ const skillGroups = [
                 img: python,
                 alt: 'Python',
                 name: 'Python',
-                desc: 'Primary language for backend APIs, data pipelines, automation, and AI-integrated applications.'
+                desc: 'Core backend language used to build scalable APIs, automation pipelines, and AI-powered applications.'
             },
             {
                 img: flask,
                 alt: 'Flask',
                 name: 'Flask',
-                desc: 'Build lightweight RESTful APIs and full-stack web applications with Flask.'
+                desc: 'Develop lightweight REST APIs and backend services with clean architecture and rapid prototyping.'
             },
             {
                 img: fastapi,
                 alt: 'FastAPI',
                 name: 'FastAPI',
-                desc: 'Build high-performance RESTful APIs with FastAPI using modern Python features, async support, and automatic OpenAPI documentation.'
+                desc: 'Build high-performance async APIs with FastAPI, leveraging type hints, validation, and automatic API documentation.'
+            },
+            {
+                img: express,
+                alt: 'Express.js',
+                name: 'Express.js',
+                desc: 'Design RESTful APIs and backend services using middleware-based architecture in Express.js.'
+            },
+            {
+                img: node,
+                alt: 'Node.js',
+                name: 'Node.js',
+                desc: 'Develop scalable server-side applications with event-driven, non-blocking architecture using Node.js.'
             }
         ]
     },
@@ -46,13 +58,13 @@ const skillGroups = [
                 img: llm,
                 alt: 'LLM Integration',
                 name: 'LLM Integration',
-                desc: 'Integrate large language models (Ollama) via prompt engineering and RAG pipelines to build AI-powered features.'
+                desc: 'Build AI-powered applications using LLMs (Ollama), implementing RAG pipelines, prompt engineering, and context-aware responses.'
             },
             {
                 img: scikit_learn,
                 alt: 'Scikit-Learn',
                 name: 'Scikit-Learn',
-                desc: 'Build and evaluate ML pipelines — classification, regression, feature engineering, and model tuning.'
+                desc: 'Develop and optimize machine learning models including classification, regression, and end-to-end ML pipelines.'
             },
         ]
     },
@@ -63,25 +75,13 @@ const skillGroups = [
                 img: react,
                 alt: 'React',
                 name: 'React',
-                desc: 'Build interactive, component-driven UIs with React and modern hooks.'
-            },
-            {
-                img: express,
-                alt: 'Express.js',
-                name: 'Express.js',
-                desc: 'Build robust backend APIs and web servers with Express.js, enabling fast routing and middleware-based architecture.'
-            },
-            {
-                img: node,
-                alt: 'Node.js',
-                name: 'Node.js',
-                desc: 'Develop scalable server-side applications using Node.js with event-driven, non-blocking architecture.'
+                desc: 'Build dynamic, component-driven user interfaces using React with hooks and modern state management.'
             },
             {
                 img: javascript,
                 alt: 'JavaScript',
                 name: 'JavaScript',
-                desc: 'Add dynamic behavior, event handling, and client-side logic to web applications.'
+                desc: 'Implement client-side logic, asynchronous operations, and interactive UI behavior.'
             },
         ]
     },
@@ -92,30 +92,30 @@ const skillGroups = [
                 img: postgres,
                 alt: 'PostgreSQL',
                 name: 'PostgreSQL',
-                desc: 'Design and manage relational databases — schema design, queries, and application integration.'
+                desc: 'Design relational schemas, optimize queries, and integrate databases into production-grade applications.'
             },
             {
                 img: mongodb,
                 alt: 'MongoDB',
                 name: 'MongoDB',
-                desc: 'Design and manage NoSQL databases (MongoDB) — schema modeling, document structures, aggregation queries, and seamless application integration.'
+                desc: 'Design flexible NoSQL schemas, manage document-based data, and build scalable data layers using MongoDB.'
             },
         ]
     },
     {
-        category: 'Tools',
+        category: 'Tools & Deployment',
         skills: [
             {
                 img: streamlit,
                 alt: 'Streamlit',
                 name: 'Streamlit',
-                desc: 'Rapidly build and deploy interactive ML dashboards and data apps.'
+                desc: 'Rapidly build and deploy interactive dashboards and AI-driven web applications.'
             },
             {
                 img: git,
                 alt: 'Git',
                 name: 'Git & GitHub',
-                desc: 'Version control, branching, and collaborative development on all projects.'
+                desc: 'Manage version control, branching strategies, and collaborative development workflows.'
             },
         ]
     },
