@@ -32,7 +32,7 @@ export default function Navbar() {
             <div className="navActions">
                 <a
                     href="/Yogiraj_Bhilare_Resume.pdf"
-                    download
+                    download="Yogiraj_Bhilare_Resume.pdf"
                     className="resumeNavBtn"
                 >
                     Resume
@@ -68,8 +68,8 @@ export default function Navbar() {
                     Contact
                 </Link>
                 <a
-                    href="/Yogiraj-Bhilare-Resume.pdf"
-                    download
+                    href="/Yogiraj_Bhilare_Resume.pdf"
+                    download="Yogiraj_Bhilare_Resume.pdf"
                     className="listItem"
                     onClick={() => setShowMenu(false)}
                     style={{ textDecoration: 'none', color: '#007bff' }}
