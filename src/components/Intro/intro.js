@@ -2,12 +2,11 @@ import React from 'react';
 import './intro.css';
 import bg from '../../assets/profile___.png';
 import { Link } from 'react-scroll';
-import btnimg from '../../assets/hire_me.png';
 
 import SplitText from "../../components/animations/SplitText";
 import RotatingText from "../../components/animations/RotatingText";
 
-export default function Intro() { 
+export default function Intro() {
   return (
     <section id="intro">
       <div className="introContent">
@@ -36,33 +35,41 @@ export default function Intro() {
 
         {/* ROTATING TEXT */}
         <div className="rotatingRole">
-            <RotatingText
-                texts={[
-                "Full-Stack Python Developer",
-                "AI / ML Beginner",
-                "Data Science Enthusiast",
-                "Creative Problem Solver"
-                ]}
-                mainClassName="rotatingText"
-                staggerFrom="last"
-                initial={{ y: "100%", opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                exit={{ y: "-120%", opacity: 0 }}
-                staggerDuration={0.025}
-                transition={{ type: "spring", damping: 30, stiffness: 400 }}
-                rotationInterval={2500}
-            />
+          <RotatingText
+            texts={[
+              "Full-Stack Python Developer",
+              "AI / ML Enthusiast",
+              "Data Science Explorer",
+              "Creative Problem Solver"
+            ]}
+            mainClassName="rotatingText"
+            staggerFrom="last"
+            initial={{ y: "100%", opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            exit={{ y: "-120%", opacity: 0 }}
+            staggerDuration={0.025}
+            transition={{ type: "spring", damping: 30, stiffness: 400 }}
+            rotationInterval={2500}
+          />
         </div>
 
         <p className="introPara">
-          A student exploring AI and data science by building useful, real-world projects in Python.
+          I build AI-powered, full-stack Python applications that solve real-world problems —
+          from LLM-integrated tools to ML dashboards.
         </p>
 
-        <Link to="contact" smooth={true} duration={500}>
-          <button className="btn">
-            <img src={btnimg} alt="Hire Me" className="btnImg" />
-          </button>
-        </Link>
+        <div className="introButtons">
+          <Link to="contact" smooth={true} duration={500}>
+            <button className="hireMeBtn">Hire Me</button>
+          </Link>
+          <a
+            href="/Yogiraj_Bhilare_Resume.pdf"
+            download
+            className="resumeBtn"
+          >
+            Download Resume
+          </a>
+        </div>
 
       </div>
 

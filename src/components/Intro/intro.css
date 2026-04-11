@@ -1,5 +1,4 @@
 #intro {
-    /* min-height: calc(100vh - 4rem); */
     width: 100%;
     max-width: 75rem;
     margin: 0 auto;
@@ -8,14 +7,11 @@
 
     display: flex;
     align-items: center;
-    /* justify-content: center;   ✅ */
     padding: 2rem;
 }
 
-
-
 .bg {
-    position: relative;            
+    position: relative;
     right: 0;
     top: 0;
     transform: none;
@@ -27,63 +23,85 @@
     margin-left: 0.5rem;
 }
 
-
 .introContent {
-    flex: 1;                       /* ✅ */
+    flex: 1;
     padding: 2rem;
     font-size: 3rem;
     font-weight: 700;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 50%;                /* ✅ controls gap */
+    max-width: 50%;
     z-index: 2;
 }
-
 
 .hello {
     font-size: 1.75rem;
     font-weight: 100;
 }
 
-.introName{
+.introName {
     color: #007bff;
 }
 
 .introPara {
     font-size: medium;
     font-weight: 300;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+    opacity: 0.85;
 }
 
-.btn {
-    background: none;
-    border: none;
-    padding: 0;
+/* Button row */
+.introButtons {
+    display: flex;
+    gap: 1rem;
     margin: 1rem 0;
+    flex-wrap: wrap;
+}
+
+.hireMeBtn {
+    padding: 0.65rem 2rem;
+    border-radius: 0.5rem;
+    border: none;
+    background: #007bff;
+    color: white;
+    font-size: 0.95rem;
+    font-weight: 600;
     cursor: pointer;
+    transition: background 0.2s ease, transform 0.15s ease;
 }
 
-/* Use natural ratio */
-.btnImg {
-    height: 40px;                /* ✅ close to real size */
-    width: auto;
-    object-fit: contain;
+.hireMeBtn:hover {
+    background: #0056cc;
+    transform: translateY(-2px);
+}
+
+.hireMeBtn:active {
+    transform: scale(0.97);
+}
+
+.resumeBtn {
+    padding: 0.65rem 2rem;
+    border-radius: 0.5rem;
+    border: 1.5px solid rgba(255, 255, 255, 0.3);
+    background: transparent;
+    color: white;
+    font-size: 0.95rem;
+    font-weight: 600;
     cursor: pointer;
-    border-radius: 10px;
-    transition: transform 0.15s ease, opacity 0.15s ease, box-shadow 0.15s ease;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    transition: border-color 0.2s ease, background 0.2s ease, transform 0.15s ease;
 }
 
-.btnImg:hover {
-    transform: scale(1.08);
-    opacity: 0.9;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+.resumeBtn:hover {
+    border-color: #007bff;
+    background: rgba(0, 123, 255, 0.08);
+    transform: translateY(-2px);
 }
-
-.btnImg:active {
-    transform: scale(0.96);
-}
-
 
 /* iPad Pro */
 @media screen and (min-width:1025px) and (max-width:1366px) {
@@ -129,6 +147,10 @@
         max-width: 65%;
         margin-top: 1rem;
     }
+
+    .introButtons {
+        justify-content: center;
+    }
 }
 
 /* Mobile */
@@ -150,6 +172,10 @@
         max-width: 80%;
         margin-top: 1rem;
     }
+
+    .introButtons {
+        justify-content: center;
+    }
 }
 
 /* Small Phones */
@@ -162,7 +188,9 @@
         max-width: 90%;
     }
 
-    .btnImg {
-        height: 34px;
+    .hireMeBtn,
+    .resumeBtn {
+        font-size: 0.85rem;
+        padding: 0.55rem 1.5rem;
     }
 }

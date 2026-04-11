@@ -1,6 +1,6 @@
 .navbar {
     height: 5rem;
-    background: rgb(30,30,30);
+    background: rgb(30, 30, 30);
     width: 100%;
     margin: 0 auto;
     padding: 0 2rem;
@@ -37,32 +37,8 @@
 .desktopMenuListItem:hover {
     color: #007bff;
     padding-bottom: 0.5rem;
-    border-bottom: 2px solid #007bff ;
+    border-bottom: 2px solid #007bff;
     transform: translateY(-2px);
-}
-
-/* BUTTON */
-.imgButton {
-    background: none;
-    border: none;
-    padding: 0;
-    cursor: pointer;
-}
-
-.desktopMenuImgBtn {
-    height: 1.6rem;
-    border-radius: 1rem;
-    transition: transform 0.2s ease;
-}
-
-.desktopMenuImgBtn:hover {
-    transform: scale(1.1);
-}
-
-
-.desktopMenuImg {
-    height: 1.5rem;
-    width: auto;
 }
 
 .active {
@@ -71,6 +47,50 @@
     border-bottom: 3px solid #007bff;
 }
 
+/* NAV ACTION BUTTONS (Resume + Contact) */
+.navActions {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.resumeNavBtn {
+    padding: 0.45rem 1.1rem;
+    border-radius: 0.4rem;
+    border: 1.5px solid rgba(255, 255, 255, 0.25);
+    background: transparent;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+    transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.resumeNavBtn:hover {
+    border-color: #007bff;
+    background: rgba(0, 123, 255, 0.08);
+}
+
+.contactNavBtn {
+    padding: 0.45rem 1.1rem;
+    border-radius: 0.4rem;
+    border: none;
+    background: #007bff;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.contactNavBtn:hover {
+    background: #0056cc;
+    transform: translateY(-1px);
+}
+
+/* MOBILE MENU */
 .mobMenu {
     display: none;
     object-fit: cover;
@@ -87,7 +107,7 @@
     padding: 0.5rem;
     height: fit-content;
     min-width: 15rem;
-    background: rgb(40,40,40);
+    background: rgb(40, 40, 40);
     border-radius: 1rem;
 }
 
@@ -95,17 +115,20 @@
     color: white;
     padding: 0.5rem 3rem;
     margin: 0.25rem;
-    background: rgb(30,30,30);
+    background: rgb(30, 30, 30);
+    cursor: pointer;
 }
 
-@media screen and (max-width:720px){
-    .mobMenu{
+@media screen and (max-width:720px) {
+    .mobMenu {
         display: flex;
     }
+
     .desktopMenu {
         display: none;
     }
-    .desktopMenuImgBtn{
+
+    .navActions {
         display: none;
     }
 }

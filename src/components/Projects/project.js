@@ -11,7 +11,7 @@ const projects = [
         name: 'Personalized Study Coach',
         img: img,
         description:
-            'AI-powered personalized study assistant: upload notes, get summaries, practice questions, contextual Q&A, and automated study schedules with progress tracking.',
+            'Built a RAG-based AI study assistant where students upload notes and get contextual Q&A, auto-generated summaries, practice questions, and personalized study schedules with progress tracking — reducing manual study planning effort significantly.',
         techStack: ['Python', 'Flask', 'Bootstrap', 'Ollama (LLM)', 'PostgreSQL'],
         github: 'https://github.com/Yogi1107/Personalized-Study-Coach',
         deployed_link: 'https://personalized-study-coach.onrender.com/'
@@ -20,23 +20,23 @@ const projects = [
         name: 'AI Resume Screener',
         img: img_,
         description:
-            'End-to-end AI-powered Resume Screening System that evaluates candidate resumes against job descriptions using a Large Language Model.',
-        techStack: ['Ollama (LLM)', 'Streamlit'],
+            'Built an end-to-end resume screening pipeline that uses an LLM to match candidate resumes against job descriptions, producing structured scores for skill match, experience fit, and hire recommendation — automating a time-intensive HR task.',
+        techStack: ['Python', 'Ollama (LLM)', 'Streamlit'],
         github: 'https://github.com/Yogi1107/AI_Resume_Screener'
     },
     {
         name: 'Disability Assistant Application',
         img: img__,
         description:
-            'Comprehensive accessibility tool integrating voice assistance, AI learning support, sign detection using MediaPipe, and customizable user profiles.',
-        techStack: ['Python', 'Flask', 'HTML', 'CSS', 'JavaScript', 'MediaPipe'],
+            'Built a comprehensive accessibility tool with real-time sign language detection (MediaPipe), AI-powered learning support, voice assistance, and customizable user profiles — designed to make technology more inclusive.',
+        techStack: ['Python', 'Flask', 'JavaScript', 'HTML', 'CSS', 'MediaPipe'],
         github: 'https://github.com/Yogi1107/Disability-Assistant-Application'
     },
     {
         name: 'Customer Churn Prediction',
         img: img___,
         description:
-            'Balanced Logistic Regression pipeline with feature scaling. Achieved Recall: 0.79 and ROC-AUC: 0.84. Integrated Streamlit dashboard for real-time churn insights.',
+            'Engineered a Logistic Regression pipeline with SMOTE balancing and feature scaling, achieving Recall of 0.79 and ROC-AUC of 0.84. Integrated a Streamlit dashboard for real-time churn prediction and business insights.',
         techStack: ['Python', 'Scikit-Learn', 'Streamlit', 'Pandas', 'Matplotlib'],
         github: 'https://github.com/Yogi1107/Customer-Churn-Prediction',
         deployed_link: 'https://customer-churn-analysis-sgel5lcxrzygrvsjf637co.streamlit.app/'
@@ -46,36 +46,33 @@ const projects = [
 export default function Project() {
     const [selectedProject, setSelectedProject] = useState(null);
 
-    const openModal = (project) => {
-        setSelectedProject(project);
-    };
-
-    const closeModal = () => {
-        setSelectedProject(null);
-    };
+    const openModal = (project) => setSelectedProject(project);
+    const closeModal = () => setSelectedProject(null);
 
     return (
         <section id='project'>
             <div className='projectTitle'>
                 <SplitText
-            text="Projects"
-            delay={50}
-            duration={1}
-            ease="power3.out"
-            splitType="chars"
-            from={{ opacity: 0, y: 40 }}
-            to={{ opacity: 1, y: 0 }}
-          />
+                    text="Projects"
+                    delay={50}
+                    duration={1}
+                    ease="power3.out"
+                    splitType="chars"
+                    from={{ opacity: 0, y: 40 }}
+                    to={{ opacity: 1, y: 0 }}
+                />
             </div>
-            <span className='projectDesc'>Here are some projects I’ve built using Python, databases, and web technologies to solve real-world problems.</span>
+            <span className='projectDesc'>
+                AI-integrated, full-stack Python applications built to solve real-world problems — from intelligent study tools to ML-powered dashboards.
+            </span>
             <div className='projectImgs'>
                 {projects.map((proj, index) => (
-                    <div 
-                        key={index} 
+                    <div
+                        key={index}
                         className='projectImgWrapper'
                         onClick={() => openModal(proj)}
                     >
-                        <img src={proj.img} alt={proj.name} className='projectImg'/>
+                        <img src={proj.img} alt={proj.name} className='projectImg' />
                         <div className='projectOverlay'>{proj.name}</div>
                     </div>
                 ))}
@@ -86,23 +83,39 @@ export default function Project() {
                     <div className='modalContent' onClick={e => e.stopPropagation()}>
                         <button className='modalClose' onClick={closeModal}>&times;</button>
                         <h2>{selectedProject.name}</h2>
-                        <p><strong>Description:</strong> {selectedProject.description}</p>
-                        <p><strong>Tech Stack:</strong> {selectedProject.techStack}</p>
-                        <p>
-                            <strong>GitHub:</strong> 
-                            <a href={selectedProject.github} target='_blank' rel='noopener noreferrer'>
-                                {selectedProject.github}
+                        <p>{selectedProject.description}</p>
+
+                        <div className='techStackRow'>
+                            {selectedProject.techStack.map((tech, i) => (
+                                <span key={i} className='techBadge'>{tech}</span>
+                            ))}
+                        </div>
+
+                        <div className='modalLinks'>
+                            <a
+                                href={selectedProject.github}
+                                target='_blank'
+                                rel='noopener noreferrer'
+                                className='modalLinkBtn'
+                            >
+                                GitHub →
                             </a>
-                        </p>
-                        <p>
-                            <strong>Deployed Link:</strong> 
-                            <a href={selectedProject.deployed_link} target='_blank' rel='noopener noreferrer'>
-                                {selectedProject.deployed_link}
-                            </a>
-                        </p>
+                            {selectedProject.deployed_link ? (
+                                <a
+                                    href={selectedProject.deployed_link}
+                                    target='_blank'
+                                    rel='noopener noreferrer'
+                                    className='modalLinkBtn modalLinkBtnAlt'
+                                >
+                                    Live Demo →
+                                </a>
+                            ) : (
+                                <span className='modalNoLink'></span>
+                            )}
+                        </div>
                     </div>
                 </div>
             )}
         </section>
-    )
+    );
 }
