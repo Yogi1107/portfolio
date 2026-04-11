@@ -2,7 +2,7 @@ import React from 'react';
 import python from '../../assets/python.png';
 import postgres from '../../assets/postgresql.png';
 import react from '../../assets/react.png';
-import mongodb from '../../assets/mongodb.png'
+import mongodb from '../../assets/mongo.png'
 import javascript from '../../assets/javascript.png';
 import fastapi from '../../assets/fastapi.png'
 import flask from '../../assets/flask.png'
@@ -67,15 +67,15 @@ const skillGroups = [
             },
             {
                 img: express,
-                alt: 'React',
-                name: 'React',
-                desc: 'Build interactive, component-driven UIs with React and modern hooks.'
+                alt: 'Express.js',
+                name: 'Express.js',
+                desc: 'Build robust backend APIs and web servers with Express.js, enabling fast routing and middleware-based architecture.'
             },
             {
                 img: node,
-                alt: 'React',
-                name: 'React',
-                desc: 'Build interactive, component-driven UIs with React and modern hooks.'
+                alt: 'Node.js',
+                name: 'Node.js',
+                desc: 'Develop scalable server-side applications using Node.js with event-driven, non-blocking architecture.'
             },
             {
                 img: javascript,
