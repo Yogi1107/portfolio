@@ -2,7 +2,16 @@ import React from 'react';
 import python from '../../assets/python.png';
 import postgres from '../../assets/postgresql.png';
 import react from '../../assets/react.png';
+import mongodb from '../../assets/mongodb.png'
 import javascript from '../../assets/javascript.png';
+import fastapi from '../../assets/fastapi.png'
+import flask from '../../assets/flask.png'
+import scikit_learn from '../../assets/scikit-learn.png'
+import express from '../../assets/express.png'
+import node from '../../assets/nodejs.png'
+import llm from '../../assets/LLM.jfif'
+import streamlit from '../../assets/streamlit.png'
+import git from '../../assets/git.png'
 import './skills.css';
 import SplitText from '../../components/animations/SplitText';
 
@@ -17,24 +26,30 @@ const skillGroups = [
                 desc: 'Primary language for backend APIs, data pipelines, automation, and AI-integrated applications.'
             },
             {
-                img: null,
+                img: flask,
                 alt: 'Flask',
                 name: 'Flask',
                 desc: 'Build lightweight RESTful APIs and full-stack web applications with Flask.'
             },
+            {
+                img: fastapi,
+                alt: 'FastAPI',
+                name: 'FastAPI',
+                desc: 'Build high-performance RESTful APIs with FastAPI using modern Python features, async support, and automatic OpenAPI documentation.'
+            }
         ]
     },
     {
         category: 'AI / ML',
         skills: [
             {
-                img: null,
+                img: llm,
                 alt: 'LLM Integration',
                 name: 'LLM Integration',
                 desc: 'Integrate large language models (Ollama) via prompt engineering and RAG pipelines to build AI-powered features.'
             },
             {
-                img: null,
+                img: scikit_learn,
                 alt: 'Scikit-Learn',
                 name: 'Scikit-Learn',
                 desc: 'Build and evaluate ML pipelines — classification, regression, feature engineering, and model tuning.'
@@ -51,6 +66,18 @@ const skillGroups = [
                 desc: 'Build interactive, component-driven UIs with React and modern hooks.'
             },
             {
+                img: express,
+                alt: 'React',
+                name: 'React',
+                desc: 'Build interactive, component-driven UIs with React and modern hooks.'
+            },
+            {
+                img: node,
+                alt: 'React',
+                name: 'React',
+                desc: 'Build interactive, component-driven UIs with React and modern hooks.'
+            },
+            {
                 img: javascript,
                 alt: 'JavaScript',
                 name: 'JavaScript',
@@ -59,7 +86,7 @@ const skillGroups = [
         ]
     },
     {
-        category: 'Data & Databases',
+        category: 'Databases',
         skills: [
             {
                 img: postgres,
@@ -68,10 +95,10 @@ const skillGroups = [
                 desc: 'Design and manage relational databases — schema design, queries, and application integration.'
             },
             {
-                img: null,
-                alt: 'Pandas & Matplotlib',
-                name: 'Pandas / Matplotlib',
-                desc: 'Data wrangling, analysis, and visualization for ML projects and dashboards.'
+                img: mongodb,
+                alt: 'MongoDB',
+                name: 'MongoDB',
+                desc: 'Design and manage NoSQL databases (MongoDB) — schema modeling, document structures, aggregation queries, and seamless application integration.'
             },
         ]
     },
@@ -79,13 +106,13 @@ const skillGroups = [
         category: 'Tools',
         skills: [
             {
-                img: null,
+                img: streamlit,
                 alt: 'Streamlit',
                 name: 'Streamlit',
                 desc: 'Rapidly build and deploy interactive ML dashboards and data apps.'
             },
             {
-                img: null,
+                img: git,
                 alt: 'Git',
                 name: 'Git & GitHub',
                 desc: 'Version control, branching, and collaborative development on all projects.'

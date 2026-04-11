@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import linkedin from '../../assets/l.png';
 import github from '../../assets/g.png';
 import leetcode from '../../assets/leetcode.png';
@@ -10,17 +10,33 @@ import { useLocation, useNavigate } from 'react-router-dom';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
-
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
-
   return null;
+}
+
+function Toast({ message, type, visible }) {
+  return (
+    <div className={`toast toast--${type} ${visible ? 'toast--visible' : ''}`}>
+      <span className='toastIcon'>{type === 'success' ? '✓' : '✕'}</span>
+      {message}
+    </div>
+  );
 }
 
 export default function Contact() {
   const form = useRef();
-  const navigate = useNavigate(); // ✅ ADD THIS
+  const navigate = useNavigate();
+
+  const [toast, setToast] = useState({ message: '', type: 'success', visible: false });
+
+  const showToast = (message, type = 'success') => {
+    setToast({ message, type, visible: true });
+    setTimeout(() => {
+      setToast(prev => ({ ...prev, visible: false }));
+    }, 3500);
+  };
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -31,15 +47,12 @@ export default function Contact() {
       })
       .then(
         () => {
-          alert("✅ Thank you for reaching out! Your message has been sent successfully.");
-
+          showToast("Message sent! I'll get back to you soon.", 'success');
           form.current.reset();
-
-          // ✅ SPA Navigation instead of DOM scroll
-          navigate('/');
+          setTimeout(() => navigate('/'), 3500);
         },
         (error) => {
-          alert("❌ Oops! Something went wrong. Please try again.");
+          showToast('Something went wrong. Please try again.', 'error');
           console.log('FAILED...', error.text);
         }
       );
@@ -47,6 +60,8 @@ export default function Contact() {
 
   return (
     <div id='contact'>
+      <Toast message={toast.message} type={toast.type} visible={toast.visible} />
+
       <div className='contactPageTitle'>
         <SplitText
           text="Contact"
@@ -60,7 +75,7 @@ export default function Contact() {
       </div>
 
       <span className='contactDesc'>
-        Feel free to reach out if you’d like to connect, collaborate, or discuss opportunities.
+        Feel free to reach out if you'd like to connect, collaborate, or discuss opportunities.
       </span>
 
       <form className='contactForm' ref={form} onSubmit={sendEmail}>
@@ -72,13 +87,13 @@ export default function Contact() {
 
         <div className='links'>
           <a href='https://github.com/Yogi1107'>
-            <img className='link' src={github} alt='GitHub'/>
+            <img className='link' src={github} alt='GitHub' />
           </a>
           <a href='https://www.linkedin.com/in/yogiraj-bhilare-bb3896253'>
-            <img className='link' src={linkedin} alt='LinkedIN'/>
+            <img className='link' src={linkedin} alt='LinkedIN' />
           </a>
           <a href='https://leetcode.com/u/yogirajbhilare1107/'>
-            <img className='link' src={leetcode} alt='Leetcode'/>
+            <img className='link' src={leetcode} alt='Leetcode' />
           </a>
         </div>
       </form>

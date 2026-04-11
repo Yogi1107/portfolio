@@ -68,7 +68,7 @@ export default function Navbar() {
                     Contact
                 </Link>
                 <a
-                    href="/Yogiraj_Bhilare_Resume.pdf"
+                    href="/Yogiraj-Bhilare-Resume.pdf"
                     download
                     className="listItem"
                     onClick={() => setShowMenu(false)}

@@ -28,7 +28,7 @@ export default function CodingStats() {
         <div className="statCard">
           <h3>GitHub Stats</h3>
           <img
-            src={`https://github-readme-stats.vercel.app/api?username=${githubUsername}&show_icons=true&theme=tokyonight`}
+            src={`https://github.pumbas.net/api/contributions/Yogi1107`}
             alt="GitHub Stats"
           />
         </div>

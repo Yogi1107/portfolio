@@ -1,24 +1,24 @@
 import React, { useState } from 'react';
 import './project.css';
-import img from '../../assets/PSC.png';
-import img_ from '../../assets/RS.png';
-import img__ from '../../assets/DAA.png';
-import img___ from '../../assets/CCP.png';
+import PSC from '../../assets/PSC.png';
+import RS from '../../assets/RS.png';
+import DAA from '../../assets/DAA.png';
+import CCP from '../../assets/CCP.png';
+import SC from '../../assets/SkillConnect.jfif';
 import SplitText from '../../components/animations/SplitText';
 
 const projects = [
     {
         name: 'Personalized Study Coach',
-        img: img,
+        img: PSC,
         description:
             'Built a RAG-based AI study assistant where students upload notes and get contextual Q&A, auto-generated summaries, practice questions, and personalized study schedules with progress tracking — reducing manual study planning effort significantly.',
         techStack: ['Python', 'Flask', 'Bootstrap', 'Ollama (LLM)', 'PostgreSQL'],
         github: 'https://github.com/Yogi1107/Personalized-Study-Coach',
-        deployed_link: 'https://personalized-study-coach.onrender.com/'
     },
     {
         name: 'AI Resume Screener',
-        img: img_,
+        img: RS,
         description:
             'Built an end-to-end resume screening pipeline that uses an LLM to match candidate resumes against job descriptions, producing structured scores for skill match, experience fit, and hire recommendation — automating a time-intensive HR task.',
         techStack: ['Python', 'Ollama (LLM)', 'Streamlit'],
@@ -26,7 +26,7 @@ const projects = [
     },
     {
         name: 'Disability Assistant Application',
-        img: img__,
+        img: DAA,
         description:
             'Built a comprehensive accessibility tool with real-time sign language detection (MediaPipe), AI-powered learning support, voice assistance, and customizable user profiles — designed to make technology more inclusive.',
         techStack: ['Python', 'Flask', 'JavaScript', 'HTML', 'CSS', 'MediaPipe'],
@@ -34,12 +34,19 @@ const projects = [
     },
     {
         name: 'Customer Churn Prediction',
-        img: img___,
+        img: CCP,
         description:
             'Engineered a Logistic Regression pipeline with SMOTE balancing and feature scaling, achieving Recall of 0.79 and ROC-AUC of 0.84. Integrated a Streamlit dashboard for real-time churn prediction and business insights.',
         techStack: ['Python', 'Scikit-Learn', 'Streamlit', 'Pandas', 'Matplotlib'],
         github: 'https://github.com/Yogi1107/Customer-Churn-Prediction',
-        deployed_link: 'https://customer-churn-analysis-sgel5lcxrzygrvsjf637co.streamlit.app/'
+    },
+    {
+        name: 'SkillConnect',
+        img: SC,
+        description:
+            'The home for hackathons. Discover events, analyse your GitHub skills, and build winning teams with complementary developers.',
+        techStack: ['MongoDB', 'Express', 'Node', 'React'],
+        github: 'https://github.com/Yogi1107/SkillConnect',
     }
 ];
 
@@ -100,18 +107,6 @@ export default function Project() {
                             >
                                 GitHub →
                             </a>
-                            {selectedProject.deployed_link ? (
-                                <a
-                                    href={selectedProject.deployed_link}
-                                    target='_blank'
-                                    rel='noopener noreferrer'
-                                    className='modalLinkBtn modalLinkBtnAlt'
-                                >
-                                    Live Demo →
-                                </a>
-                            ) : (
-                                <span className='modalNoLink'></span>
-                            )}
                         </div>
                     </div>
                 </div>
