@@ -31,8 +31,8 @@ export default function Navbar() {
 
             <div className="navActions">
                 <a
-                    href="/Yogiraj_Bhilare_Resume.pdf"
-                    download="Yogiraj_Bhilare_Resume.pdf"
+                    href={`${process.env.PUBLIC_URL}/Yogiraj_Bhilare_Resume.pdf`}
+                    download
                     className="resumeNavBtn"
                 >
                     Resume
