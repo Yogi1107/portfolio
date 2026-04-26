@@ -63,7 +63,7 @@ export default function Intro() {
             <button className="hireMeBtn">Hire Me</button>
           </Link>
           <a
-            href="/Yogiraj_Bhilare_Resume.pdf"
+            href={`${process.env.PUBLIC_URL}/Yogiraj_Bhilare_Resume.pdf`}
             download
             className="resumeBtn"
           >

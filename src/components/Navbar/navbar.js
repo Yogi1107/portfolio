@@ -68,8 +68,8 @@ export default function Navbar() {
                     Contact
                 </Link>
                 <a
-                    href="/Yogiraj_Bhilare_Resume.pdf"
-                    download="Yogiraj_Bhilare_Resume.pdf"
+                    href={`${process.env.PUBLIC_URL}/Yogiraj_Bhilare_Resume.pdf`}
+                    download
                     className="listItem"
                     onClick={() => setShowMenu(false)}
                     style={{ textDecoration: 'none', color: '#007bff' }}
