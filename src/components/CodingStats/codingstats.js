@@ -5,19 +5,20 @@ import SplitText from "./../animations/SplitText.js";
 export default function CodingStats() {
   const githubUsername = "Yogi1107";
   const leetcodeUsername = "yogirajbhilare1107";
+  const hackerrankUsername = "yogirajbhilare11";
 
   return (
     <section id="codingStats">
       <div className="statsTitle">
-          <SplitText
-            text="Coding Stats"
-            delay={50}
-            duration={1}
-            ease="power3.out"
-            splitType="chars"
-            from={{ opacity: 0, y: 40 }}
-            to={{ opacity: 1, y: 0 }}
-          />
+        <SplitText
+          text="Coding Stats"
+          delay={50}
+          duration={1}
+          ease="power3.out"
+          splitType="chars"
+          from={{ opacity: 0, y: 40 }}
+          to={{ opacity: 1, y: 0 }}
+        />
       </div>
       <p className="statsDesc">
         Practicing coding to improve logic and problem-solving.
@@ -43,14 +44,14 @@ export default function CodingStats() {
         </div>
       </div>
 
-      {/* Contribution Graph
-      <div className="contributionBox">
-        <h3>GitHub Contributions</h3>
+      {/* HackerRank Stats */}
+      <div className="hackerrankBox">
+        <h3>HackerRank Stats</h3>
         <img
-          src={`https://github.com/users/${githubUsername}/contributions`}
-          alt="GitHub Contributions"
+          src={`https://hackerrank-stats.vercel.app/api?username=${hackerrankUsername}`}
+          alt="HackerRank Stats"
         />
-      </div> */}
+      </div>
     </section>
   );
 }
