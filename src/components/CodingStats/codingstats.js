@@ -42,15 +42,15 @@ export default function CodingStats() {
             alt="LeetCode Stats"
           />
         </div>
-      </div>
 
-      {/* HackerRank Stats */}
-      <div className="hackerrankBox">
-        <h3>HackerRank Stats</h3>
-        <img
-          src={`https://hackerrank-stats.vercel.app/api?username=${hackerrankUsername}`}
-          alt="HackerRank Stats"
-        />
+        {/* HackerRank Stats */}
+        <div className="statCard">
+          <h3>HackerRank Stats</h3>
+          <img
+            src={`https://hackerrank-stats.vercel.app/api?username=${hackerrankUsername}`}
+            alt="HackerRank Stats"
+          />
+        </div>
       </div>
     </section>
   );
