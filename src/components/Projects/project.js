@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './project.css';
 import PSC from '../../assets/PSC.png';
 import RS from '../../assets/RS.png';
-import DAA from '../../assets/DAA.png';
+import quiz from '../../assets/quiz_app.png';
 import CCP from '../../assets/CCP.png';
 import SC from '../../assets/SkillConnect.jfif';
 import SplitText from '../../components/animations/SplitText';
@@ -25,12 +25,12 @@ const projects = [
         github: 'https://github.com/Yogi1107/AI_Resume_Screener'
     },
     {
-        name: 'Disability Assistant Application',
-        img: DAA,
+        name: 'Quiz Application for Visually Impaired Students',
+        img: quiz,
         description:
             'Built a comprehensive accessibility tool with real-time sign language detection (MediaPipe), AI-powered learning support, voice assistance, and customizable user profiles — designed to make technology more inclusive.',
         techStack: ['Python', 'Flask', 'JavaScript', 'HTML', 'CSS', 'MediaPipe'],
-        github: 'https://github.com/Yogi1107/Disability-Assistant-Application'
+        github: 'https://github.com/Yogi1107/Quiz-Application-for-Disable-Students'
     },
     {
         name: 'Customer Churn Prediction',
