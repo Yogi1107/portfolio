@@ -29,7 +29,7 @@
 
 /* Category group */
 .skillGroup {
-    width: 80%;
+    width: 100%;
     max-width: 75rem;
     margin-bottom: 1.5rem;
     text-align: left;
@@ -105,7 +105,7 @@
 
 @media (min-width: 900px) {
     .skillsBars {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 

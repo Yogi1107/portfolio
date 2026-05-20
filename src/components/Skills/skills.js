@@ -2,72 +2,57 @@ import React from 'react';
 import python from '../../assets/python.png';
 import postgres from '../../assets/postgresql.png';
 import react from '../../assets/react.png';
-import mongodb from '../../assets/mongo.png'
+import mongodb from '../../assets/mongo.png';
 import javascript from '../../assets/javascript.png';
-import fastapi from '../../assets/fastapi.png'
-import flask from '../../assets/flask.png'
-import scikit_learn from '../../assets/scikit-learn.png'
-import express from '../../assets/express.png'
-import node from '../../assets/nodejs.png'
-import llm from '../../assets/LLM.jfif'
-import streamlit from '../../assets/streamlit.png'
-import git from '../../assets/git.png'
+import fastapi from '../../assets/fastapi.png';
+import flask from '../../assets/flask.png';
+import scikit_learn from '../../assets/scikit-learn.png';
+import express from '../../assets/express.png';
+import node from '../../assets/nodejs.png';
+import streamlit from '../../assets/streamlit.png';
+import git from '../../assets/git.png';
+
+/* Add these assets */
+import html from '../../assets/html.png';
+import css from '../../assets/css.png';
+import bootstrap from '../../assets/bootstrap.png';
+import sql from '../../assets/sql.png';
+import github from '../../assets/github.png';
+import jupyter from '../../assets/jupyter.png';
+import colab from '../../assets/colab.png';
+import docker from '../../assets/docker.png';
+import pandas from '../../assets/pandas.png';
+import numpy from '../../assets/numpy.png';
+import matplotlib from '../../assets/matplotlib.png';
+
 import './skills.css';
 import SplitText from '../../components/animations/SplitText';
 
 const skillGroups = [
     {
-        category: 'Backend',
+        category: 'Languages',
         skills: [
             {
                 img: python,
                 alt: 'Python',
                 name: 'Python',
-                desc: 'Core backend language used to build scalable APIs, automation pipelines, and AI-powered applications.'
+                desc: 'Primary programming language for backend development, automation, AI/ML applications, and data analysis.'
             },
             {
-                img: flask,
-                alt: 'Flask',
-                name: 'Flask',
-                desc: 'Develop lightweight REST APIs and backend services with clean architecture and rapid prototyping.'
+                img: sql,
+                alt: 'SQL',
+                name: 'SQL',
+                desc: 'Write optimized queries, manage relational databases, and perform structured data operations.'
             },
             {
-                img: fastapi,
-                alt: 'FastAPI',
-                name: 'FastAPI',
-                desc: 'Build high-performance async APIs with FastAPI, leveraging type hints, validation, and automatic API documentation.'
-            },
-            {
-                img: express,
-                alt: 'Express.js',
-                name: 'Express.js',
-                desc: 'Design RESTful APIs and backend services using middleware-based architecture in Express.js.'
-            },
-            {
-                img: node,
-                alt: 'Node.js',
-                name: 'Node.js',
-                desc: 'Develop scalable server-side applications with event-driven, non-blocking architecture using Node.js.'
-            }
-        ]
-    },
-    {
-        category: 'AI / ML',
-        skills: [
-            {
-                img: llm,
-                alt: 'LLM Integration',
-                name: 'LLM Integration',
-                desc: 'Build AI-powered applications using LLMs (Ollama), implementing RAG pipelines, prompt engineering, and context-aware responses.'
-            },
-            {
-                img: scikit_learn,
-                alt: 'Scikit-Learn',
-                name: 'Scikit-Learn',
-                desc: 'Develop and optimize machine learning models including classification, regression, and end-to-end ML pipelines.'
+                img: javascript,
+                alt: 'JavaScript',
+                name: 'JavaScript',
+                desc: 'Build interactive frontend applications and handle dynamic client-side functionality.'
             },
         ]
     },
+
     {
         category: 'Frontend',
         skills: [
@@ -75,16 +60,59 @@ const skillGroups = [
                 img: react,
                 alt: 'React',
                 name: 'React',
-                desc: 'Build dynamic, component-driven user interfaces using React with hooks and modern state management.'
+                desc: 'Develop modern component-based user interfaces with hooks and reusable architecture.'
             },
             {
-                img: javascript,
-                alt: 'JavaScript',
-                name: 'JavaScript',
-                desc: 'Implement client-side logic, asynchronous operations, and interactive UI behavior.'
+                img: bootstrap,
+                alt: 'Bootstrap',
+                name: 'Bootstrap',
+                desc: 'Create responsive and mobile-first layouts quickly using Bootstrap UI components.'
+            },
+            {
+                img: html,
+                alt: 'HTML5',
+                name: 'HTML5',
+                desc: 'Structure semantic and accessible web pages using modern HTML standards.'
+            },
+            {
+                img: css,
+                alt: 'CSS3',
+                name: 'CSS3',
+                desc: 'Design responsive and visually appealing interfaces with modern CSS styling techniques.'
             },
         ]
     },
+
+    {
+        category: 'Backend',
+        skills: [
+            {
+                img: flask,
+                alt: 'Flask',
+                name: 'Flask',
+                desc: 'Build lightweight REST APIs and backend services with rapid development workflows.'
+            },
+            {
+                img: node,
+                alt: 'Node.js',
+                name: 'Node.js',
+                desc: 'Develop scalable server-side applications using event-driven architecture.'
+            },
+            {
+                img: express,
+                alt: 'Express.js',
+                name: 'Express.js',
+                desc: 'Create RESTful APIs and backend services with middleware-based Express architecture.'
+            },
+            {
+                img: fastapi,
+                alt: 'FastAPI',
+                name: 'FastAPI',
+                desc: 'Develop high-performance asynchronous APIs with automatic validation and documentation.'
+            },
+        ]
+    },
+
     {
         category: 'Databases',
         skills: [
@@ -92,30 +120,85 @@ const skillGroups = [
                 img: postgres,
                 alt: 'PostgreSQL',
                 name: 'PostgreSQL',
-                desc: 'Design relational schemas, optimize queries, and integrate databases into production-grade applications.'
+                desc: 'Design relational schemas, optimize queries, and manage structured production databases.'
             },
             {
                 img: mongodb,
-                alt: 'MongoDB',
-                name: 'MongoDB',
-                desc: 'Design flexible NoSQL schemas, manage document-based data, and build scalable data layers using MongoDB.'
+                alt: 'MongoDB Atlas',
+                name: 'MongoDB Atlas',
+                desc: 'Build scalable cloud-hosted NoSQL database solutions with flexible document schemas.'
             },
         ]
     },
+
     {
-        category: 'Tools & Deployment',
+        category: 'Developer Tools',
         skills: [
+            {
+                img: git,
+                alt: 'Git',
+                name: 'Git',
+                desc: 'Manage version control, branching workflows, and collaborative development.'
+            },
+            {
+                img: github,
+                alt: 'GitHub',
+                name: 'GitHub',
+                desc: 'Host repositories, manage collaboration, and maintain project workflows.'
+            },
+            {
+                img: jupyter,
+                alt: 'Jupyter',
+                name: 'Jupyter',
+                desc: 'Perform interactive coding, experimentation, and data analysis in notebook environments.'
+            },
+            {
+                img: colab,
+                alt: 'Google Colab',
+                name: 'Google Colab',
+                desc: 'Run cloud-based Python notebooks for machine learning and data science workflows.'
+            },
+            {
+                img: docker,
+                alt: 'Docker',
+                name: 'Docker',
+                desc: 'Containerize applications and maintain consistent deployment environments.'
+            },
+        ]
+    },
+
+    {
+        category: 'ML / Data',
+        skills: [
+            {
+                img: scikit_learn,
+                alt: 'Scikit-learn',
+                name: 'Scikit-learn',
+                desc: 'Build and evaluate machine learning models including classification and regression.'
+            },
+            {
+                img: pandas,
+                alt: 'Pandas',
+                name: 'Pandas',
+                desc: 'Handle data cleaning, preprocessing, transformation, and analysis efficiently.'
+            },
+            {
+                img: numpy,
+                alt: 'NumPy',
+                name: 'NumPy',
+                desc: 'Perform fast numerical computations and array-based operations for data science workflows.'
+            },
+            {
+                img: matplotlib,
+                alt: 'Matplotlib',
+                name: 'Matplotlib',
+                desc: 'Create visualizations, plots, and graphical insights for exploratory data analysis.'
+            },
             {
                 img: streamlit,
                 alt: 'Streamlit',
                 name: 'Streamlit',
-                desc: 'Rapidly build and deploy interactive dashboards and AI-driven web applications.'
-            },
-            {
-                img: git,
-                alt: 'Git',
-                name: 'Git & GitHub',
-                desc: 'Manage version control, branching strategies, and collaborative development workflows.'
+                desc: 'Build and deploy interactive ML dashboards and AI-powered web applications quickly.'
             },
         ]
     },
@@ -144,21 +227,29 @@ export default function Skills() {
                     to={{ opacity: 1, y: 0 }}
                 />
             </div>
+
             <span className='skillDesc'>
-                I build AI-integrated, full-stack Python applications — from LLM pipelines and ML models to REST APIs and React frontends.
-                Here's the stack I work with consistently.
+                I build full-stack applications, REST APIs, and AI-powered solutions using modern web technologies,
+                databases, and machine learning tools.
             </span>
 
             {skillGroups.map((group) => (
                 <div key={group.category} className='skillGroup'>
                     <h3 className='skillGroupLabel'>{group.category}</h3>
+
                     <div className='skillsBars'>
                         {group.skills.map((skill) => (
                             <div key={skill.name} className='skillBar'>
-                                {skill.img
-                                    ? <img src={skill.img} alt={skill.alt} className='skillBarImg' />
-                                    : <SkillIcon name={skill.name} />
-                                }
+                                {skill.img ? (
+                                    <img
+                                        src={skill.img}
+                                        alt={skill.alt}
+                                        className='skillBarImg'
+                                    />
+                                ) : (
+                                    <SkillIcon name={skill.name} />
+                                )}
+
                                 <div className='skillBarText'>
                                     <h2>{skill.name}</h2>
                                     <p>{skill.desc}</p>
