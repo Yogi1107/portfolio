@@ -60,7 +60,7 @@ export default function Intro() {
 
         <div className="introButtons">
           <Link to="contact" smooth={true} duration={500}>
-            <button className="hireMeBtn">Hire Me</button>
+            <button className="hireMeBtn">Contact Me</button>
           </Link>
           <a
             href={`${process.env.PUBLIC_URL}/Yogiraj_Bhilare_Resume.pdf`}
