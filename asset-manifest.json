@@ -1,24 +1,25 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.f2c9ebd6.css",
-    "main.js": "/portfolio/static/js/main.ba707cb7.js",
+    "main.css": "/portfolio/static/css/main.4404cc83.css",
+    "main.js": "/portfolio/static/js/main.bde48f15.js",
     "static/media/PSC.png": "/portfolio/static/media/PSC.6dd9040a419c34082161.png",
     "static/media/CCP.png": "/portfolio/static/media/CCP.e48f03c0fe8379a28b46.png",
     "static/media/quiz_app.png": "/portfolio/static/media/quiz_app.c524de8d57fb964ebb93.png",
     "static/media/RS.png": "/portfolio/static/media/RS.ea949c0ce944fca3c56e.png",
+    "static/media/matplotlib.png": "/portfolio/static/media/matplotlib.37d918ee8749964d18ee.png",
     "static/media/profile___.png": "/portfolio/static/media/profile___.7540c02564ab7f970f6e.png",
     "static/media/SkillConnect.jfif": "/portfolio/static/media/SkillConnect.ced379e1627938170c33.jfif",
     "static/media/logo.png": "/portfolio/static/media/logo.5401862f181b1d1cf804.png",
+    "static/media/css.png": "/portfolio/static/media/css.5f2a0db53d746e8323b7.png",
     "static/media/leetcode.png": "/portfolio/static/media/leetcode.c79f333b12595d3eec8f.png",
     "static/media/l.png": "/portfolio/static/media/l.49ed58cf0e7c5c72ebe8.png",
     "static/media/g.png": "/portfolio/static/media/g.2fe41fde0ed70bd80558.png",
-    "static/media/LLM.jfif": "/portfolio/static/media/LLM.e6066f80d9117dec1bed.jfif",
     "index.html": "/portfolio/index.html",
-    "main.f2c9ebd6.css.map": "/portfolio/static/css/main.f2c9ebd6.css.map",
-    "main.ba707cb7.js.map": "/portfolio/static/js/main.ba707cb7.js.map"
+    "main.4404cc83.css.map": "/portfolio/static/css/main.4404cc83.css.map",
+    "main.bde48f15.js.map": "/portfolio/static/js/main.bde48f15.js.map"
   },
   "entrypoints": [
-    "static/css/main.f2c9ebd6.css",
-    "static/js/main.ba707cb7.js"
+    "static/css/main.4404cc83.css",
+    "static/js/main.bde48f15.js"
   ]
 }
