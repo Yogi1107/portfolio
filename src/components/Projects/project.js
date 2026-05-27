@@ -5,34 +5,18 @@ import RS from '../../assets/RS.png';
 import quiz from '../../assets/quiz_app.png';
 import CCP from '../../assets/CCP.png';
 import SC from '../../assets/SkillConnect.jfif';
+import IGV from '../../assets/IGV.png'
 import SplitText from '../../components/animations/SplitText';
 
 const projects = [
     {
-        name: 'Personalized Study Coach',
-        img: PSC,
+        name: 'SkillConnect',
+        img: SC,
         description:
-            'Built a RAG-based AI study assistant where students upload notes and get contextual Q&A, auto-generated summaries, practice questions, and personalized study schedules with progress tracking — reducing manual study planning effort significantly.',
-        techStack: ['Python', 'Flask', 'Bootstrap', 'Ollama (LLM)', 'PostgreSQL'],
-        github: 'https://github.com/Yogi1107/Personalized-Study-Coach',
-        liveDemo: 'https://personalized-study-coach.onrender.com/'
-    },
-    {
-        name: 'AI Resume Screener',
-        img: RS,
-        description:
-            'Built an end-to-end resume screening pipeline that uses an LLM to match candidate resumes against job descriptions, producing structured scores for skill match, experience fit, and hire recommendation — automating a time-intensive HR task.',
-        techStack: ['Python', 'Ollama (LLM)', 'Streamlit'],
-        github: 'https://github.com/Yogi1107/AI_Resume_Screener',
-        liveDemo: 'https://llm-resume-screener.streamlit.app/'
-    },
-    {
-        name: 'Quiz Application for Visually Impaired Students',
-        img: quiz,
-        description:
-            'Built a comprehensive accessibility tool with real-time sign language detection (MediaPipe), AI-powered learning support, voice assistance, and customizable user profiles — designed to make technology more inclusive.',
-        techStack: ['Python', 'Flask', 'JavaScript', 'HTML', 'CSS', 'MediaPipe'],
-        github: 'https://github.com/Yogi1107/Quiz-Application-for-Disable-Students',
+            'The home for hackathons. Discover events, analyse your GitHub skills, and build winning teams with complementary developers.',
+        techStack: ['MongoDB', 'Express', 'Node', 'React'],
+        github: 'https://github.com/Yogi1107/SkillConnect',
+        liveDemo: 'https://skill-connect-peach.vercel.app/'
     },
     {
         name: 'Customer Churn Prediction',
@@ -44,13 +28,38 @@ const projects = [
         liveDemo: 'https://customer-churn-analysis-sgel5lcxrzygrvsjf637co.streamlit.app/'
     },
     {
-        name: 'SkillConnect',
-        img: SC,
+        name: 'Quiz Application for Visually Impaired Students',
+        img: quiz,
         description:
-            'The home for hackathons. Discover events, analyse your GitHub skills, and build winning teams with complementary developers.',
-        techStack: ['MongoDB', 'Express', 'Node', 'React'],
-        github: 'https://github.com/Yogi1107/SkillConnect',
-        liveDemo: 'https://skill-connect-peach.vercel.app/'
+            'A fully functional, role-based quiz platform designed for teachers and students with enhanced accessibility features. This project emphasizes usability for blind and visually impaired users through voice commands, screen reader support, and accessible UI design.',
+        techStack: ['Python', 'Flask', 'JavaScript', 'HTML', 'CSS', ],
+        github: 'https://github.com/Yogi1107/Quiz-Application-for-Disable-Students',
+    },
+    {
+        name: 'Personalized Study Coach',
+        img: PSC,
+        description:
+            'Built a RAG-based AI study assistant where students upload notes and get contextual Q&A, auto-generated summaries, practice questions, and personalized study schedules with progress tracking — reducing manual study planning effort significantly.',
+        techStack: ['Python', 'Flask', 'Bootstrap', 'AI Integration', 'PostgreSQL'],
+        github: 'https://github.com/Yogi1107/Personalized-Study-Coach',
+        liveDemo: 'https://personalized-study-coach.onrender.com/'
+    },
+    {
+        name: 'AI Resume Screener',
+        img: RS,
+        description:
+            'Built an end-to-end resume screening pipeline that uses an LLM to match candidate resumes against job descriptions, producing structured scores for skill match, experience fit, and hire recommendation — automating a time-intensive HR task.',
+        techStack: ['Python', 'AI Integration', 'Streamlit'],
+        github: 'https://github.com/Yogi1107/AI_Resume_Screener',
+        liveDemo: 'https://llm-resume-screener.streamlit.app/'
+    },
+    {
+        name: 'Interactive Graph Visualizer',
+        img: IGV,
+        description: "Interactive Minimum Spanning Tree visualizer for Kruskal's and Prim's algorithms with step-by-step execution and clean UI",
+        techStack: ['HTML','CSS','JS'],
+        github: 'https://github.com/Yogi1107/Interactive-Graph-Visualizer',
+        liveDemo: 'https://yogi1107.github.io/Interactive-Graph-Visualizer/'
     }
 ];
 
