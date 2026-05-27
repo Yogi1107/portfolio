@@ -7,11 +7,7 @@ enthusiast** and provides an easy way to explore my work.
 
 ------------------------------------------------------------------------
 
-## 🌐 Live Demo
-
-👉 *(Add your deployed link here)*\
-Example:\
-https://yogirajbhilare.github.io
+## 🌐 Live Demo: https://yogi1107.github.io/portfolio/
 
 ------------------------------------------------------------------------
 
